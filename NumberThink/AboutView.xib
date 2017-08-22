@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutView" customModule="NumberThink" customModuleProvider="target">
+            <connections>
+                <outlet property="contentTextView" destination="hO5-ll-1th" id="U0Y-3Q-zW9"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="mUl-Dg-wJk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" indicatorStyle="white" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hO5-ll-1th">
+                    <rect key="frame" x="8" y="8" width="359" height="651"/>
+                    <mutableString key="text">NumberThink is a learning aid for the Major System, a well-known technique for remembering numbers by associating them with words.
+
+In the Major System, each digit of a number is associated with a sound (not a letter). By combining the sounds to form words, you just need to remember the words to remember the number.
+
+Tap the star button (you have to close this screen first) to see a list of which sounds are associated with each number.
+
+Some sounds are not associated with numbers (a, e, i, o, u and w) so these are used to help form words.
+
+For example, if you want to remember the number 91, you could simply remember the word "bat", since "b" is associated with 9 and "t" is associated with 1, and "a" isn't associated with a number. You could also remember the word "bet" since "e" is also not associated with a number.
+
+NumberThink helps you learn the Major System in two ways:
+
+1. To help you learn, tap the Teach button and then enter a number to see what the word is.
+
+2. To test your knowledge, tap the Quiz button and then enter the number for the word or phrase shown.
+
+A common use of the Major System is to use it to create a set of specific "peg" words for all the numbers from 1 to 100. This can make it easier to build a phrase for particular number since you always use the same set of peg words. You can customize the list of Peg Words by tapping the gear button (you have to close this screen first).
+
+NoSleep Software • www.nosleep.net</mutableString>
+                    <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="hO5-ll-1th" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="N8Y-lU-zlf"/>
+                <constraint firstAttribute="trailing" secondItem="hO5-ll-1th" secondAttribute="trailing" constant="8" id="YGt-4z-oXD"/>
+                <constraint firstItem="hO5-ll-1th" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Z8A-bF-D2z"/>
+                <constraint firstAttribute="bottom" secondItem="hO5-ll-1th" secondAttribute="bottom" constant="8" id="bgM-0h-iZJ"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
